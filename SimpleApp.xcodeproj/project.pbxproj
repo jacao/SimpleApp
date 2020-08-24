@@ -18,6 +18,12 @@
 		E200DEAD24F3A8B30084384F /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E200DEA624F3A8B30084384F /* NSLayoutConstraint+PureLayout.m */; };
 		E200DEAE24F3A8B30084384F /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E200DEA924F3A8B30084384F /* ALView+PureLayout.m */; };
 		E200DEAF24F3A8B30084384F /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E200DEAC24F3A8B30084384F /* NSArray+PureLayout.m */; };
+		E200DEC424F3C71D0084384F /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E200DEBF24F3C71D0084384F /* RxCocoa.framework */; };
+		E200DEC524F3C71D0084384F /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E200DEC024F3C71D0084384F /* RxBlocking.framework */; };
+		E200DEC624F3C71D0084384F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E200DEC124F3C71D0084384F /* Alamofire.framework */; };
+		E200DEC724F3C71D0084384F /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E200DEC224F3C71D0084384F /* RxRelay.framework */; };
+		E200DEC824F3C71D0084384F /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E200DEC324F3C71D0084384F /* RxSwift.framework */; };
+		E200DECA24F3FF0F0084384F /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E200DEC924F3FF0F0084384F /* SwiftyJSON.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +68,18 @@
 		E200DEAB24F3A8B30084384F /* PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureLayout.h; sourceTree = "<group>"; };
 		E200DEAC24F3A8B30084384F /* NSArray+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+PureLayout.m"; sourceTree = "<group>"; };
 		E200DEB024F3A8F50084384F /* SimpleApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		E200DEB224F3C5150084384F /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		E200DEB324F3C5160084384F /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		E200DEB424F3C5160084384F /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		E200DEB524F3C5160084384F /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
+		E200DEB624F3C5160084384F /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
+		E200DEB724F3C5160084384F /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		E200DEBF24F3C71D0084384F /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = SOURCE_ROOT; };
+		E200DEC024F3C71D0084384F /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = SOURCE_ROOT; };
+		E200DEC124F3C71D0084384F /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
+		E200DEC224F3C71D0084384F /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = SOURCE_ROOT; };
+		E200DEC324F3C71D0084384F /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = SOURCE_ROOT; };
+		E200DEC924F3FF0F0084384F /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +87,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E200DEC824F3C71D0084384F /* RxSwift.framework in Frameworks */,
+				E200DEC724F3C71D0084384F /* RxRelay.framework in Frameworks */,
+				E200DECA24F3FF0F0084384F /* SwiftyJSON.framework in Frameworks */,
+				E200DEC424F3C71D0084384F /* RxCocoa.framework in Frameworks */,
+				E200DEC624F3C71D0084384F /* Alamofire.framework in Frameworks */,
+				E200DEC524F3C71D0084384F /* RxBlocking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +120,7 @@
 				E200DE8824F3A7060084384F /* SimpleAppTests */,
 				E200DE9324F3A7060084384F /* SimpleAppUITests */,
 				E200DE7024F3A7040084384F /* Products */,
+				E200DEB124F3C5150084384F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,6 +171,12 @@
 		E200DEA224F3A8900084384F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E200DEC924F3FF0F0084384F /* SwiftyJSON.framework */,
+				E200DEC124F3C71D0084384F /* Alamofire.framework */,
+				E200DEC024F3C71D0084384F /* RxBlocking.framework */,
+				E200DEBF24F3C71D0084384F /* RxCocoa.framework */,
+				E200DEC224F3C71D0084384F /* RxRelay.framework */,
+				E200DEC324F3C71D0084384F /* RxSwift.framework */,
 				E200DEA324F3A8B30084384F /* PureLayout */,
 			);
 			path = Frameworks;
@@ -167,6 +198,19 @@
 			path = PureLayout;
 			sourceTree = "<group>";
 		};
+		E200DEB124F3C5150084384F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E200DEB324F3C5160084384F /* Alamofire.framework */,
+				E200DEB424F3C5160084384F /* RxBlocking.framework */,
+				E200DEB224F3C5150084384F /* RxCocoa.framework */,
+				E200DEB524F3C5160084384F /* RxRelay.framework */,
+				E200DEB724F3C5160084384F /* RxSwift.framework */,
+				E200DEB624F3C5160084384F /* RxTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -177,6 +221,7 @@
 				E200DE6B24F3A7040084384F /* Sources */,
 				E200DE6C24F3A7040084384F /* Frameworks */,
 				E200DE6D24F3A7040084384F /* Resources */,
+				E200DEBE24F3C51F0084384F /* SCRIPT - Carthage */,
 			);
 			buildRules = (
 			);
@@ -292,6 +337,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E200DEBE24F3C51F0084384F /* SCRIPT - Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxRelay.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+			);
+			name = "SCRIPT - Carthage";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxCocoa.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxBlocking.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxRelay.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxSwift.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E200DE6B24F3A7040084384F /* Sources */ = {
@@ -480,6 +558,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QP2YPVUADE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SimpleApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -499,6 +581,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QP2YPVUADE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SimpleApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
