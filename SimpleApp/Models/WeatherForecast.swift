@@ -11,6 +11,7 @@ import SwiftyJSON
 
 class WeatherForecast {
     
+    // Enum for the weather icon
     enum WeatherIcon {
         case sunny
         case partiallySunny
@@ -18,6 +19,7 @@ class WeatherForecast {
         case cloudy
         case snowy
         
+        // Initialise icon using string
         init(rawValue: String) {
             switch rawValue {
             case "SU": self = .sunny
@@ -46,13 +48,16 @@ class WeatherForecast {
     let iconName: String
     let weekday: String
     
+    // Take in weather json to attempt to initalise a weather forecase object
     init?(_ json: JSON) {
         
+        // Guard statements in Swift helps you return your functions early, if a condition isn’t met.
         guard let temperature = json["temperature"].string,
             let windspeed = json["windspeed"].string,
             let icon = json["icon"].string,
             let iconName = json["iconName"].string,
             let weekday = json["weekday"].string else {
+                // If we dont have all the values need to initialise this object return nil
                 return nil
         }
         

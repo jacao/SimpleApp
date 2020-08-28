@@ -43,7 +43,10 @@ class ViewController: UIViewController {
     
     func renderWeather() {
         
+        // Get todays weather forecast
         self.viewModel.getTodaysWeatherForecast().subscribe(
+            
+            //Wait until next event emmitted
             onNext: { weatherForecast in
             
                 self.spinner.stopAnimating()
@@ -51,14 +54,19 @@ class ViewController: UIViewController {
                 self.view.addSubview(weatherView)
                 weatherView.autoAlignAxis(toSuperviewAxis: .vertical)
                 weatherView.autoAlignAxis(toSuperviewAxis: .horizontal)
+                
             }
         ).disposed(by: self.disposeBag)
     }
     
+    /**
+     Build up a view using a weather forecase object
+     */
     func buildWeatherView(_ weatherForecast: WeatherForecast) -> UIView {
         
         let container = UIView()
            
+        // Stackview allow you to layout a series of views vertically or horizontally with little effort
         let stackView = UIStackView()
         stackView.axis = .vertical
         stackView.spacing = 20
@@ -81,6 +89,8 @@ class ViewController: UIViewController {
         let tempImageView = UIImageView(image: tempImage)
            
         tempretureView.addSubview(tempImageView)
+        
+        // Using pure layout we can pin view edges to other views edges
         tempImageView.autoPinEdge(toSuperviewEdge: .top)
         tempImageView.autoPinEdge(toSuperviewEdge: .left)
         tempImageView.autoPinEdge(toSuperviewEdge: .bottom)
