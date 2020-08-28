@@ -10,7 +10,6 @@
 		E200DE7324F3A7040084384F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E200DE7224F3A7040084384F /* AppDelegate.swift */; };
 		E200DE7524F3A7040084384F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E200DE7424F3A7040084384F /* SceneDelegate.swift */; };
 		E200DE7724F3A7040084384F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E200DE7624F3A7040084384F /* ViewController.swift */; };
-		E200DE7A24F3A7040084384F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E200DE7824F3A7040084384F /* Main.storyboard */; };
 		E200DE7C24F3A7060084384F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E200DE7B24F3A7060084384F /* Assets.xcassets */; };
 		E200DE7F24F3A7060084384F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E200DE7D24F3A7060084384F /* LaunchScreen.storyboard */; };
 		E200DE8A24F3A7060084384F /* SimpleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E200DE8924F3A7060084384F /* SimpleAppTests.swift */; };
@@ -24,6 +23,16 @@
 		E200DEC724F3C71D0084384F /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E200DEC224F3C71D0084384F /* RxRelay.framework */; };
 		E200DEC824F3C71D0084384F /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E200DEC324F3C71D0084384F /* RxSwift.framework */; };
 		E200DECA24F3FF0F0084384F /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E200DEC924F3FF0F0084384F /* SwiftyJSON.framework */; };
+		E2B7CD3524F8E49B0027D752 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B7CD3424F8E49B0027D752 /* WeatherViewModel.swift */; };
+		E2B7CD3724F8E50C0027D752 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B7CD3624F8E50C0027D752 /* WeatherService.swift */; };
+		E2B7CD3824F8F0B80027D752 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E200DEC924F3FF0F0084384F /* SwiftyJSON.framework */; };
+		E2B7CD3924F8F0B80027D752 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E200DEC124F3C71D0084384F /* Alamofire.framework */; };
+		E2B7CD3A24F8F0B80027D752 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E200DEC024F3C71D0084384F /* RxBlocking.framework */; };
+		E2B7CD3B24F8F0B80027D752 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E200DEBF24F3C71D0084384F /* RxCocoa.framework */; };
+		E2B7CD3C24F8F0B80027D752 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E200DEC224F3C71D0084384F /* RxRelay.framework */; };
+		E2B7CD3D24F8F0B80027D752 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E200DEC324F3C71D0084384F /* RxSwift.framework */; };
+		E2B7CD4324F8FC030027D752 /* WeatherForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B7CD4224F8FC030027D752 /* WeatherForecast.swift */; };
+		E2B7CD6324F904510027D752 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2B7CD6124F904500027D752 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +57,6 @@
 		E200DE7224F3A7040084384F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E200DE7424F3A7040084384F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E200DE7624F3A7040084384F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E200DE7924F3A7040084384F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E200DE7B24F3A7060084384F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E200DE7E24F3A7060084384F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E200DE8024F3A7060084384F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -80,6 +88,10 @@
 		E200DEC224F3C71D0084384F /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = SOURCE_ROOT; };
 		E200DEC324F3C71D0084384F /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = SOURCE_ROOT; };
 		E200DEC924F3FF0F0084384F /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = SOURCE_ROOT; };
+		E2B7CD3424F8E49B0027D752 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		E2B7CD3624F8E50C0027D752 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		E2B7CD4224F8FC030027D752 /* WeatherForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherForecast.swift; sourceTree = "<group>"; };
+		E2B7CD6224F904500027D752 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = SimpleApp/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +112,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2B7CD3824F8F0B80027D752 /* SwiftyJSON.framework in Frameworks */,
+				E2B7CD3924F8F0B80027D752 /* Alamofire.framework in Frameworks */,
+				E2B7CD3A24F8F0B80027D752 /* RxBlocking.framework in Frameworks */,
+				E2B7CD3B24F8F0B80027D752 /* RxCocoa.framework in Frameworks */,
+				E2B7CD3C24F8F0B80027D752 /* RxRelay.framework in Frameworks */,
+				E2B7CD3D24F8F0B80027D752 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +139,7 @@
 				E200DE9324F3A7060084384F /* SimpleAppUITests */,
 				E200DE7024F3A7040084384F /* Products */,
 				E200DEB124F3C5150084384F /* Frameworks */,
+				E2B7CD6024F9039B0027D752 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,9 +160,12 @@
 				E200DEA224F3A8900084384F /* Frameworks */,
 				E200DE7224F3A7040084384F /* AppDelegate.swift */,
 				E200DE7424F3A7040084384F /* SceneDelegate.swift */,
-				E200DE7624F3A7040084384F /* ViewController.swift */,
-				E200DE7824F3A7040084384F /* Main.storyboard */,
+				E2B7CD4024F8FBCA0027D752 /* Views */,
+				E2B7CD4124F8FBD40027D752 /* ViewModels */,
+				E2B7CD3F24F8FBC30027D752 /* Models */,
+				E2B7CD3E24F8FB990027D752 /* Services */,
 				E200DE7B24F3A7060084384F /* Assets.xcassets */,
+				E2B7CD6124F904500027D752 /* Main.storyboard */,
 				E200DE7D24F3A7060084384F /* LaunchScreen.storyboard */,
 				E200DE8024F3A7060084384F /* Info.plist */,
 			);
@@ -209,6 +231,46 @@
 				E200DEB624F3C5160084384F /* RxTest.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2B7CD3E24F8FB990027D752 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E2B7CD3624F8E50C0027D752 /* WeatherService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E2B7CD3F24F8FBC30027D752 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E2B7CD4224F8FC030027D752 /* WeatherForecast.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E2B7CD4024F8FBCA0027D752 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E200DE7624F3A7040084384F /* ViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E2B7CD4124F8FBD40027D752 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E2B7CD3424F8E49B0027D752 /* WeatherViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E2B7CD6024F9039B0027D752 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				E200DE7824F3A7040084384F /* Main.storyboard */,
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,7 +380,7 @@
 			files = (
 				E200DE7F24F3A7060084384F /* LaunchScreen.storyboard in Resources */,
 				E200DE7C24F3A7060084384F /* Assets.xcassets in Resources */,
-				E200DE7A24F3A7040084384F /* Main.storyboard in Resources */,
+				E2B7CD6324F904510027D752 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,12 +438,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2B7CD4324F8FC030027D752 /* WeatherForecast.swift in Sources */,
+				E2B7CD3724F8E50C0027D752 /* WeatherService.swift in Sources */,
 				E200DE7724F3A7040084384F /* ViewController.swift in Sources */,
 				E200DE7324F3A7040084384F /* AppDelegate.swift in Sources */,
 				E200DE7524F3A7040084384F /* SceneDelegate.swift in Sources */,
 				E200DEAE24F3A8B30084384F /* ALView+PureLayout.m in Sources */,
 				E200DEAF24F3A8B30084384F /* NSArray+PureLayout.m in Sources */,
 				E200DEAD24F3A8B30084384F /* NSLayoutConstraint+PureLayout.m in Sources */,
+				E2B7CD3524F8E49B0027D752 /* WeatherViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,20 +482,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E200DE7824F3A7040084384F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E200DE7924F3A7040084384F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E200DE7D24F3A7060084384F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				E200DE7E24F3A7060084384F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E2B7CD6124F904500027D752 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2B7CD6224F904500027D752 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -605,6 +670,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QP2YPVUADE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SimpleAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -614,6 +683,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.unidays.SimpleAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/$(PROJECT_NAME)-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleApp.app/SimpleApp";
@@ -627,6 +697,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QP2YPVUADE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SimpleAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -636,6 +710,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.unidays.SimpleAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/$(PROJECT_NAME)-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleApp.app/SimpleApp";
@@ -656,6 +731,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.unidays.SimpleAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/$(PROJECT_NAME)-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = SimpleApp;
@@ -676,6 +752,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.unidays.SimpleAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/$(PROJECT_NAME)-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = SimpleApp;

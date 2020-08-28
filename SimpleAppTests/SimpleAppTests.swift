@@ -19,7 +19,20 @@ class SimpleAppTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
+    func testWeatherService() throws {
+        
+        let expectation = self.expectation(description: "Getting weather")
+        
+        let weatherService = WeatherService()
+        _ = weatherService.getTodaysWeatherForecast().subscribe(
+            onNext: { weatherForecast in
+                XCTAssertTrue(weatherForecast.iconName.isEmpty == false)
+                expectation.fulfill()
+            }
+        )
+        
+        waitForExpectations(timeout: 10, handler: nil)
+        
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
