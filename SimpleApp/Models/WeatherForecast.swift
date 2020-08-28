@@ -11,9 +11,38 @@ import SwiftyJSON
 
 class WeatherForecast {
     
+    enum WeatherIcon {
+        case sunny
+        case partiallySunny
+        case rainy
+        case cloudy
+        case snowy
+        
+        init(rawValue: String) {
+            switch rawValue {
+            case "SU": self = .sunny
+            case "PC", "FA": self = .partiallySunny
+            case "SH", "RO", "LR": self = .rainy
+            case "CL": self = .cloudy
+            case "SN": self = .snowy
+            default: self = .cloudy
+            }
+        }
+        
+        var iconAsset: String {
+            switch self {
+            case .sunny: return "sunny"
+            case .partiallySunny: return "partially-sunny"
+            case .rainy: return "rainy"
+            case .cloudy: return "cloudy"
+            case .snowy: return "snowy"
+            }
+        }
+    }
+    
     let temperature: Int
     let windspeed: Int
-    let icon: String
+    let icon: WeatherIcon
     let iconName: String
     let weekday: String
     
@@ -29,7 +58,7 @@ class WeatherForecast {
         
         self.temperature = Int(temperature)!
         self.windspeed = Int(windspeed)!
-        self.icon = icon
+        self.icon = WeatherIcon(rawValue: icon)
         self.iconName = iconName
         self.weekday = weekday
     }
